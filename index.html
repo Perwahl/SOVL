@@ -5,14 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | SOVL</title>
   </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1366 height=768 style="width: 1366px; height: 768px; background: #231F20"></canvas>
+  <body style="text-align: center; background: rgb(12, 43, 51);">
+    <!-- <canvas id="unity-canvas" width=1366 height=768 style="width: 1366px; height: 768px; background: #231F20"></canvas> -->
+    <canvas id="unity-canvas" width=1366 height=768 style="width: 1366px; height: 768px; background: rgb(20, 67, 79)"></canvas>
     <script src="Build/SOVL.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/SOVL.data.gz",
-        frameworkUrl: "Build/SOVL.framework.js.gz",
-        codeUrl: "Build/SOVL.wasm.gz",
+        dataUrl: "Build/SOVL.data",
+        frameworkUrl: "Build/SOVL.framework.js",
+        codeUrl: "Build/SOVL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DalenStudios",
         productName: "SOVL",
